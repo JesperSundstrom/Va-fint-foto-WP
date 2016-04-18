@@ -1,5 +1,0 @@
-<Files install.php>
-	Order deny,allow
-	Deny from all
-	Allow from 194.103.203.170
-</Files>
