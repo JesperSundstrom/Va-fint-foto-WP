@@ -10,18 +10,45 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="container">
-			<div class="site-info">
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'start' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'start' ), 'WordPress' ); ?></a>
-				<span class="sep"> | </span>
-				<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'start' ), 'start', '<a href="http://ingenious-web.com/" rel="designer">Ingenious Solution</a>' ); ?>
-			</div><!-- .site-info -->
-		</div><!-- .container -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+
+
+
+	<footer id="colophon" class=""role="contentinfo">
+        <div class="divider"></div>
+        <div id="footerInfo">
+            <a href="index.html"><div style="background-image:url(<?php bloginfo('stylesheet_directory'); ?>/bilder/vafintfoto.jpg);" class="footerLogo"></div></a>
+
+            <p id="footerTitle">
+                KRISTINA ACZÉL NEBRON
+            </p>
+            <div id="footerInfoCont">
+                <a href="https://www.facebook.com/vafintfoto/"><img class="fb" src="<?php bloginfo('stylesheet_directory'); ?>/bilder/facebook.png" alt="facebook" /></a>
+                <p>
+                    OSKARSVÄGEN 8, 70214 ÖREBRO
+                </p>
+                <p>
+                    INFO@VAFINTFOTO.COM | WWW.VAFINTFOTO.COM
+                </p>
+                <p>
+                    019 - 33 13 00 | 070 - 156 13 82
+                </p>
+
+                <p id="copy">
+                    &copy; Kristina Aczél Nebron 2015
+                </p>
+            </div>
+        </div>
+        <div style="text-align:center;width:100%; background-color:#2F2F2F">
+            <img class="sff" src="<?php bloginfo('stylesheet_directory'); ?>/bilder/sff.png" alt="Svenska Fotografers Förbund" />
+
+        </div>
+    </footer>
 
 <?php wp_footer(); ?>
+
+
+	</div><!-- #page -->
+
 
 </body>
 </html>
