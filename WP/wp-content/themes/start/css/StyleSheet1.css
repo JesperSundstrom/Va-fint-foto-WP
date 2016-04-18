@@ -1,0 +1,142 @@
+﻿/* Navigation */
+.navLogo {
+    height: 65px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 300px;
+}
+
+.nav-wrapper {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    min-height: 100%;
+}
+
+nav li {
+    list-style-type: none;
+    float: left;
+    line-height: 65px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #090909;
+    transition: 0.1s;
+    font-size: 20px;
+    display: block;
+    padding: 0 10px;
+}
+
+.mobilBorder {
+    border-bottom: 0.2px solid black;
+}
+
+nav a:hover {
+    color: rgba(9, 9, 9, 0.25);
+    transition: .3s;
+}
+.selected{
+    color:rgba(9, 9, 9, 0.25);
+}
+
+.navContentMobil {
+    display: none;
+}
+
+
+#mobil {
+    display: none;
+}
+
+
+#burgerMenu {
+    height: 100%;
+    width: 50px;
+    display: none;
+}
+
+@media only screen and (min-device-width : 0px) and (max-device-width : 550px) {
+
+
+    nav li {
+        list-style-type: none;
+        line-height: 64px;
+        float: initial;
+        background-color: #f7f7f7;
+        text-align: center;
+    }
+
+    #burgerMenu {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    nav a:hover {
+        border-bottom: 0px;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+
+    .nav {
+        display: none;
+    }
+
+    nav li {
+        list-style-type: none;
+        line-height: 64px;
+        float: initial;
+        text-align: center;
+        background-color: #f7f7f7;
+    }
+
+    #burgerMenu {
+        display: inline-block;
+    }
+
+    nav a:hover {
+        border-bottom: 0px;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+
+    .navContent {
+        display: none;
+    }
+
+    .navContentMobil {
+        display: none;
+    }
+
+    .mobilBtn {
+        font-size: 40px;
+        font-weight: bolder;
+        display: block;
+        float: right;
+        margin: 7px 7px 0 0;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    #mobil {
+        display: block;
+    }
+}
